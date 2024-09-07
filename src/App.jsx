@@ -9,7 +9,9 @@ function App() {
 
   return (
     <div className="App">
-     
+     <body>
+      
+   
      <header>
       <Navbar />
       
@@ -19,9 +21,10 @@ function App() {
      <About />
      <Projects />
      <Contact />
-     <footer>
+    <footer>
       <Footer />
-     </footer>
+      </footer>
+      </body>
     </div>
   );
 }

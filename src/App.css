@@ -9,19 +9,18 @@
   background-color: cyan;
   border-radius: 10px;
 }
-
+body{
+  margin: 0;
+  padding: 0;
+}
 html{
+  background-color: #283c34;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-.reveal{
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: all 1.2s ;
-}
-
-.reveal.active{
-  transform: translateY(0);
-  opacity: 1;
+footer{
+  margin: 0;
+  padding: 0;
 }

@@ -22,10 +22,10 @@ function Contact() {
             
             <h1>{Contact}</h1>
             <form class="form"  action="https://formspree.io/f/xwpelkdn" method="POST">
-            <input type="text" placeholder='First Name' name="first_name" data-aos="zoom-in"/>
-            <input type="text" placeholder='Second Name' name="Second_name" data-aos="zoom-in"/>
-            <input type="email" placeholder='Email' name="email" data-aos="zoom-in"/>
-            <textarea name="" id="" rows="6" Name="Message" placeholder='Write a Message ..' data-aos="zoom-in" ></textarea>
+            <input type="text" placeholder='First Name' name="first_name" data-aos="zoom-in" required/>
+            <input type="text" placeholder='Second Name' name="Second_name" data-aos="zoom-in" required/>
+            <input type="email" placeholder='Email' name="email" data-aos="zoom-in" required/>
+            <textarea name="" id="" rows="6" Name="Message" placeholder='Write a Message ..' data-aos="zoom-in" required ></textarea>
             <button type='Submit' >Send</button>
             </form>
           </div>
