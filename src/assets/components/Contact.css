@@ -1,0 +1,95 @@
+
+
+.Contact-bck{
+    height: 100vh;
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Contact-container{
+    text-align: center;
+    width: 610px;
+    padding: 10px;
+}
+.Contact-container h1{
+    font-size: 60px;
+    margin-bottom: 10px;
+    height: 80px;
+}
+.Contact-container input[type=text]{
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-right: 6px;
+    border-radius: 15px;
+}
+.Contact-container input[type=email]{
+    padding: 20px;
+    width: 540px;
+    border-radius: 15px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.Contact-container textarea{
+    font-size: 18px;
+    padding: 20px;
+    width: 540px;
+    border-radius: 15px;
+    border-width: 2px;
+    margin-top: 15px;
+}
+.Contact-container button{
+    padding:15px;
+    font-size: 25px;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+    border: none;
+    width: 580px;
+    margin-top: 15px;
+}
+
+.Contact-container button:hover{
+    transition: 0.3s;
+    cursor: pointer;
+    opacity: 0.7;
+}
+@media  (max-width: 700px){
+    
+    .Contact-container{
+        text-align: center;
+        width: 400px;
+        padding: 10px;
+    }
+    .Contact-container input[type=text]{
+        font-size: 18px;
+        border: none;
+    }
+    .Contact-container input[type=email]{
+        width: auto;
+        font-size: 18px;
+        border: none;
+    }
+    .Contact-container textarea{
+        width: auto;
+        font-size: 18px;
+        width: 225px;
+        border: none;
+    }
+    .Contact-container button{
+        padding:15px;
+        font-size: 25px;
+        border-radius: 15px;
+        color: white;
+        background-color: black;
+        border: none;
+        width: 260px;
+        margin-top: 15px;
+    }
+    .Contact-container h1{
+        height: 30px;
+        font-size: 30px;
+    }
+}

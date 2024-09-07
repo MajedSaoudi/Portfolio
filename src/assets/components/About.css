@@ -1,0 +1,38 @@
+.About{
+    background-color: beige;
+    width: 100%;
+    min-height: 100vh;
+}
+.About-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.About-info{
+    text-align: start;
+    width: 50%;
+    line-height: 30px;
+}
+
+.About-info h1{
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.About-info p{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+}
+
+@media  screen and (max-width: 600px){
+    .About-info p{
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+    .About-info{
+        width: 65%;
+    }
+}

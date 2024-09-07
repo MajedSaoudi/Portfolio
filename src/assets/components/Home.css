@@ -1,0 +1,151 @@
+
+
+.Home{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #283c34;
+    overflow-x: hidden;
+}
+
+.Home-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: start;
+ 
+}
+
+
+
+.pro-img img{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    box-shadow: 0 0 12px cyan;
+ }
+
+ .pro-img img:hover{
+   cursor: pointer;
+   transform: scale(1.075,1.075);
+ }
+
+
+ .pro-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    animation: appear 1s linear;
+ }
+
+
+ .Home-info{
+    padding: 50px;
+    animation: appear 1s linear;
+ }
+ .home-par{
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .home-add,.Skills{
+    display: flex;
+    align-items: center; 
+    height: 35px;
+ }
+ .home-add img{
+    border: 1;
+    margin-top: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px cyan;
+    height: 30px;
+    margin-right: 10px;
+ }
+ .Skills img{
+    border: 1;
+    height: 30px;
+    margin-right: 10px;
+ }
+ .home-add a:hover{
+    transform: scale(1.15,1.15);
+ }
+
+ .home-par h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: cyan;
+    margin-top: 5px;
+    margin-bottom: 5px;
+ }
+ .home-par h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-top: 11px;
+    margin-bottom: 11px;
+ }
+
+
+ .btn-group{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+ }
+ .btn{
+    padding: 15px 15px;
+    border-radius: 25px;
+    background-color: black;
+    box-shadow: 0 0  5px cyan;
+    font-size: 16;
+    color: white;
+    border: 2px solid transparent;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+ }
+
+
+
+ @media screen and (max-width: 800px){
+    .Home-info{
+        padding: 15px;
+    }
+ }
+ @media screen and (max-width: 608px){
+   .Home-info{
+      padding: 5px;
+  }
+         .Home-container{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            margin: 0px auto;
+            padding: 0;
+            text-align: center;
+         }
+         .home-add{
+            justify-content: center;
+         }
+         .btn-group{
+            justify-content: center;
+         }
+
+
+ }
+ @keyframes appear {
+   from{
+      transform: translateY(150px);
+      
+   }
+   to{
+      transform: translateY(0px);
+   }
+ }
+
+
+
+
+
+

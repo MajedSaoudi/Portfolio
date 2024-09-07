@@ -1,0 +1,159 @@
+.Projects{
+    min-height: 100vh;
+    background-image: url('../images/galaxy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.projects-container{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    display: block;
+    padding: 15px;
+    border-radius: 10px;
+ }
+
+ 
+
+.PROJECTS{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    place-items: center;
+    margin: 0;
+ }
+
+ .projects{
+    position: relative;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+    border: 1;
+    width: 450px;
+    box-shadow: rgba(233, 229, 229, 0) 0px 2px 4px 0px, rgba(255, 255, 255, 0.32) 0px 2px 16px 0px;
+    color: white;
+    height: 320px;
+    border-radius: 10px;
+    
+ }
+
+
+ .pro-par{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+ }
+ .pro-par:hover{
+   opacity: 1;
+   transition: ease 0.7s;
+ }
+
+ .pro-par > *{
+   transform: translateY(25px);
+   transition: transform 1s;
+ }
+
+ .pro-par:hover > *{
+   transform: translateY(0px);
+ }
+ .projects  h2{
+   padding: 0;
+   margin: 0;
+   margin-bottom: 5px;
+ }
+ .projects p{
+      margin: 0;
+      font-size: 20px;
+ }
+ .projects  h1{
+    margin: auto;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25.8px;
+    padding: 0;
+    margin-bottom: 8px;
+ }
+ .projects p{
+   display: flex;
+   align-items: center;
+    font-weight: 100;
+    height: 81px;
+    padding-left: 15px;
+    padding-right: 15px;
+ }
+ .projects a{
+   height: 100%;
+   width: 100%;
+ }
+ 
+ .projects img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    object-fit: fit;
+ }
+ .projects:hover  img{
+   transition: ease-in 1.2s;
+   transform: scale(1.1);
+ }
+ .tools{
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   gap: 10px;
+ }
+ .tools img{
+   margin: 0;
+   height: 28px;
+   width: 28px;
+ }
+.canteen-tools{
+   width: 100%;
+   height: 30px;
+}
+ .Live-demo{
+   display: flex;
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+   gap: 25px;
+ }
+ .Live-demo a{
+   height: 30px;
+   width: 30px;
+ }
+
+
+ @media  screen and (max-width: 600px){
+   .title{
+      font-size: 25px;
+   }
+   .projects{
+      width: 300px;
+   }
+   .projects h2{
+      font-size: 28px;
+      margin-top: 15px;
+   }
+   .projects h1{
+      font-size: 24px;
+   }
+   .projects p{
+      font-size: 16px;
+     
+   }
+ }

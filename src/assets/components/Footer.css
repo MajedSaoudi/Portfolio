@@ -1,0 +1,14 @@
+.Footer{
+    display: flex;
+    font-family: cursive;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: #283c34;
+    color: white;
+}
+.Footer div{
+    max-width: 205.55px;
+    padding: 10px;
+}
