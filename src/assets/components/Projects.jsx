@@ -49,8 +49,8 @@ function Projects() {
      </div>
      <h1>See demo</h1>
      <div className='Live-demo'>
-     <a href="https://github.com/MajedSaoudi" target="_blank"><img src={githubz} alt="" /></a>
-     <a href="https://github.com/MajedSaoudi" target="_blank"><img src={demo} alt="" /></a>
+     <a href="https://github.com/MajedSaoudi/University-Restaurant" target="_blank"><img src={githubz} alt="" /></a>
+     <a href="http://universityrestaurant.free.nf/home.php" target="_blank"><img src={demo} alt="" /></a>
      </div>
     </div>
    </div>
