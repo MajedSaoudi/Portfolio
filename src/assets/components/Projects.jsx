@@ -7,6 +7,7 @@ import php from '../images/php_PNG23.png';
 import sql from '../images/sql.png';
 import react from '../images/react.png';
 import restau from '../images/project1.png';
+import Eshop from '../images/E-Sop.PNG';
 import egym from '../images/gymm.jpeg';
 import logo from '../images/Portfoliod.PNG';
 import githubz from '../images/githubw.png';
@@ -78,6 +79,28 @@ function Projects() {
     
   </div>
 
+  <div className="projects" data-aos="fade-up"
+   data-aos-anchor-placement="bottom-bottom"
+   data-aos-delay="200">
+     <a href=""><img src={Eshop} alt="" /></a>
+     <div className="pro-par">
+  
+     <h2>EShop</h2>
+     <p>EShop is a platform dedicated to selling the latest Apple devices</p>
+     <h1>Tools</h1>
+     <div className='tools'>
+     <img src={react} alt="" />
+   
+     </div>
+     <h1>See demo</h1>
+     <div className='Live-demo'>
+     <a href="https://github.com/MajedSaoudi/EShop" target="_blank"><img src={githubz} alt="" /></a>
+     <a href="https://majedsaoudi.github.io/EShop/" target="_blank"><img src={demo} alt="" /></a>
+     </div>
+    </div>
+    
+  </div>
+  
 
   <div className="projects" data-aos="fade-up"
 data-aos-anchor-placement="bottom-bottom"
