@@ -5,12 +5,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 function Contact() {
 
-  const[Contact] = useTypewriter ({
-    words : ['Contact me',"Let's Get in touch!"],
-    typeSpeed:100,
-    deleteSpeed:100,
-    loop : {},
-  });
 
 
 
@@ -20,7 +14,7 @@ function Contact() {
               <div className='Contact-bck'> 
           <div className='Contact-container'>
             
-            <h1>{Contact}</h1>
+            <h1>Contact me</h1>
             <form class="form"  action="https://formspree.io/f/xwpelkdn" method="POST">
             <input type="text" placeholder='First Name' name="first_name" data-aos="zoom-in" required/>
             <input type="text" placeholder='Second Name' name="Second_name" data-aos="zoom-in" required/>

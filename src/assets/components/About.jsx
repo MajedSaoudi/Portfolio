@@ -9,7 +9,7 @@ function About  () {
 
   const[About] = useTypewriter ({
     words : [' Hey ! ,Welcome to my Portfolio!I am a frontend web developer , I am a Mathematics and Computer Science graduate with a specilisation in information systems and software engineering, passionate about Web development, algebra, and applying mathematics to solve complex problems and create innovative solutions. Fluent in English, French, and Arabic, I am eager to utilize my knowledge and expertise to make a positive impact both academically and professionally.'],
-    typeSpeed:20,
+    typeSpeed:10,
   });
   
 

@@ -17,7 +17,10 @@ const menubar ={
 function Navbar(){
  
   const [isOpen , setisOpen] = useState(false);
-  
+  const handleLinkClick = () => {
+    setisOpen(!isOpen);
+  };
+
  
 
     return(
@@ -39,10 +42,10 @@ function Navbar(){
           }/> 
           </label>
           <ul className='nav-ul'>
-           <li className='nav-li'><Link to="Home" className="nav-a" spy={true} smooth={true} duration={500}>Home</Link></li>
-           <li className='nav-li'><Link to='About' className="nav-a" spy={true} smooth={true}  duration={500}> ABOUT</Link></li>
-           <li className='nav-li'><Link to="Projects" className="nav-a" spy={true} smooth={true} duration={500}>PROJECTS</Link></li>
-           <li className='nav-li'><Link to="Contact" className="nav-a" spy={true} smooth={true} duration={500} >CONTACT</Link></li>
+           <li className='nav-li' onClick={()=> handleLinkClick}><Link to="Home" className="nav-a" spy={true} smooth={true} duration={500}>Home</Link></li>
+           <li className='nav-li' onClick={()=> handleLinkClick}><Link to='About' className="nav-a" spy={true} smooth={true}  duration={500}> ABOUT</Link></li>
+           <li className='nav-li' onClick={()=> handleLinkClick}><Link to="Projects" className="nav-a" spy={true} smooth={true} duration={500}>PROJECTS</Link></li>
+           <li className='nav-li' onClick={()=> handleLinkClick}><Link to="Contact" className="nav-a" spy={true} smooth={true} duration={500} >CONTACT</Link></li>
            </ul>
            <div className='scroll-watcher'></div>
            </nav>
