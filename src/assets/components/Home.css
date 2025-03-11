@@ -3,7 +3,7 @@
 .Home{
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #283c34;
     overflow-x: hidden;
 }
@@ -124,6 +124,8 @@
             margin: 0px auto;
             padding: 0;
             text-align: center;
+            margin-top:40px;
+            overflow-y: none;
          }
          .home-add{
             justify-content: center;

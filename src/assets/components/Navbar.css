@@ -77,9 +77,8 @@
       position: fixed;
       width: 100%;
       display: block !important;
-      height: 100vh;
-      background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
-      backdrop-filter: blur(20px) saturate(1.7);
+      height: 50vh;
+      background-color: #283c34;
       text-align: center;
       right:-200%;
       transition: all .5s;

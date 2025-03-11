@@ -1,7 +1,7 @@
 .About{
     background-color: beige;
     width: 100%;
-    min-height: 100vh;
+  
 }
 .About-container{
     display: flex;
@@ -13,26 +13,35 @@
 
 .About-info{
     text-align: start;
-    width: 50%;
+    width: 1000px;
     line-height: 30px;
+   
+  
+    font-family: 'afacad',sans-serif;
+    height: max-content;
 }
 
 .About-info h1{
-    font-size: 24px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 54px;
+   
+    text-align: center;
 }
-.About-info p{
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
-    letter-spacing: 2px;
+.About-info h4{
+    font-size: 28px;
+    line-height: 35px;
+    
+  
 }
 
+
 @media  screen and (max-width: 600px){
-    .About-info p{
-        letter-spacing: 1px;
-        font-size: 16px;
+    .About-info h1{
+        font-size: 50px;
+    }
+    .About-info h4{
+        font-size: 22px;
     }
     .About-info{
-        width: 65%;
+        padding: 25px;
     }
 }

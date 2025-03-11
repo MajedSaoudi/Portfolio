@@ -12,6 +12,7 @@ import egym from '../images/Egym.png';
 import githubz from '../images/githubw.png';
 import demo from '../images/demo.png';
 import React ,{ useEffect } from 'react';
+import Stoxy from'../images/Stoxy (2).png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 function Projects() {
@@ -23,19 +24,46 @@ function Projects() {
       );
     },[]);
   
+    const useIntersectionObserver = (selector, animation, threshold = 0.5) => {
+      useEffect(() => {
+        const elements = document.querySelectorAll(selector);
+    
+        if (elements.length > 0) {
+          const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.style.animation = `${animation} 0.7s ease forwards`;
+                observer.unobserve(entry.target);
+              }
+            });
+          }, {
+            threshold: threshold,
+          });
+    
+          elements.forEach(element => observer.observe(element));
+        }
+      }, [selector, animation, threshold]);
+    };
+
+    useIntersectionObserver('.projects', 'fadeup');
+    useIntersectionObserver('.title', 'fadedown');
+
 
 
 
   return (
     <div className='Projects' id='Projects'>
   <div className="projects-container">
-   <div className="title"><h1 className="title-head" data-aos="fade-down">My Projects</h1>
+    <div className='Project-handler'>
+   <div className="title"><h1 className="title-head" >My Projects</h1>
+   </div>
+   <div className='PROJECTS-CONTAINER'>
     <div className="PROJECTS">
 
 
 
-   <div className="projects" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="0">
-    <img src={restau} alt="" />
+   <div className="projects" >
+    <img src={restau} alt="" loading='lazy'/>
     <div className="pro-par">
     <h2>Univ Canteen</h2>
     <p>This Reponsive Website streamlines the dining experience by allowing students and staff to reserve meals and seating.</p>
@@ -55,12 +83,29 @@ function Projects() {
     </div>
    </div>
 
+   <div className="projects" >
+    <img src={Stoxy} alt=""  loading='lazy'/>
+    <div className="pro-par">
+    <h2>Stoxy</h2>
+    <p>Stoxy is a Responsive Website dedicated to selling the latest clothing,shoes,fourniture and electronic devices</p>
+    <h1>Tools</h1>
+     <div className='tools'>
+     <img src={html} alt="" />
+     <img src={css} alt="" />
+     <img src={js} alt="" />
+     <img src={php} alt="" />
+     <img src={sql} alt="" />
+     </div>
+     <h1>See demo</h1>
+     <div className='Live-demo'>
+     <a href="https://github.com/MajedSaoudi/Stoxy" target="_blank"><img src={githubz} alt="" /></a>
+     <a href="https://majedsaoudi.github.io/Stoxy/" target="_blank"><img src={demo} alt="" /></a>
+     </div>
+    </div>
+   </div>
 
-
-  <div className="projects" data-aos="fade-up"
-   data-aos-anchor-placement="bottom-bottom"
-   data-aos-delay="200">
-     <a href=""><img src={Eshop} width="400" alt="" /></a>
+  <div className="projects" >
+     <a href=""><img src={Eshop} width="400" alt=""  loading='lazy'/></a>
      <div className="pro-par">
   
      <h2>EShop</h2>
@@ -80,11 +125,9 @@ function Projects() {
   </div>
   
 
-  <div className="projects" data-aos="fade-up"
-data-aos-anchor-placement="bottom-bottom"
-data-aos-delay="400"
+  <div className="projects"
   >
-    <img src={egym} alt="" /> 
+    <img src={egym} alt=""  loading='lazy'/> 
      <div className="pro-par">
      <h2>EGym</h2>
      <p>EGym's is a Responsive website designed to inspire and inform visitors about their fitness journey. </p>
@@ -105,8 +148,9 @@ data-aos-delay="400"
 
 
    </div>
- 
-  </div>
+   </div>
+   </div>
+  
 
 
     </div>
