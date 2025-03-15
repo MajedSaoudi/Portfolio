@@ -24,29 +24,7 @@ function Projects() {
       );
     },[]);
   
-    const useIntersectionObserver = (selector, animation, threshold = 0.5) => {
-      useEffect(() => {
-        const elements = document.querySelectorAll(selector);
-    
-        if (elements.length > 0) {
-          const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                entry.target.style.animation = `${animation} 0.7s ease forwards`;
-                observer.unobserve(entry.target);
-              }
-            });
-          }, {
-            threshold: threshold,
-          });
-    
-          elements.forEach(element => observer.observe(element));
-        }
-      }, [selector, animation, threshold]);
-    };
-
-    useIntersectionObserver('.projects', 'fadeup');
-    useIntersectionObserver('.title', 'fadedown');
+ 
 
 
 
@@ -55,7 +33,7 @@ function Projects() {
     <div className='Projects' id='Projects'>
   <div className="projects-container">
     <div className='Project-handler'>
-   <div className="title"><h1 className="title-head" >My Projects</h1>
+   <div className="title"><h1  >My Projects</h1>
    </div>
    <div className='PROJECTS-CONTAINER'>
     <div className="PROJECTS">
