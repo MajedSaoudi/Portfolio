@@ -59,9 +59,7 @@
     border-radius: 10px;
     object-fit: fill;
     opacity: 0;
-    animation: fadeup ease forwards;
-    animation-timeline: view();
-    animation-range: entry 50%;
+
  }
 
 
