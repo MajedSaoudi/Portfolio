@@ -41,11 +41,14 @@ function Navbar(){
             !isOpen? null: closetag
           }/> 
           </label>
-          <ul className='nav-ul'>
-           <li className='nav-li' onClick={()=> handleLinkClick}><Link to="Home" className="nav-a" spy={true} smooth={true} duration={500}>Home</Link></li>
-           <li className='nav-li' onClick={()=> handleLinkClick}><Link to='About' className="nav-a" spy={true} smooth={true}  duration={500}> ABOUT</Link></li>
-           <li className='nav-li' onClick={()=> handleLinkClick}><Link to="Projects" className="nav-a" spy={true} smooth={true} duration={500}>PROJECTS</Link></li>
-           <li className='nav-li' onClick={()=> handleLinkClick}><Link to="Contact" className="nav-a" spy={true} smooth={true} duration={500} >CONTACT</Link></li>
+          <ul className='nav-ul' style={{
+            right: isOpen? '0' : '-200%',
+            
+          }}>
+           <li className='nav-li' ><Link to="Home" className="nav-a" spy={true} smooth={true} duration={500} onClick={() => setisOpen(!isOpen)}>Home</Link></li>
+           <li className='nav-li' ><Link to='About' onClick={() => setisOpen(!isOpen)} className="nav-a" spy={true} smooth={true}  duration={500}> ABOUT</Link></li>
+           <li className='nav-li' ><Link to="Projects" onClick={() => setisOpen(!isOpen)} className="nav-a" spy={true} smooth={true} duration={500}>PROJECTS</Link></li>
+           <li className='nav-li' ><Link to="Contact" onClick={() => setisOpen(!isOpen)} className="nav-a" spy={true} smooth={true} duration={500} >CONTACT</Link></li>
            </ul>
            <div className='scroll-watcher'></div>
            </nav>

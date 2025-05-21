@@ -5,13 +5,13 @@
     background-size: cover;
     width: 100vw;
     padding-bottom: 150px;
-    
+    height: max-content;
 }
 
 .projects-container{
     display: flex;
     width: 100vw;
-    
+   
     justify-content: center;
 }
 .Project-handler{
@@ -160,12 +160,16 @@
  @media  screen and (max-width: 955px){
     .PROJECTS{
       grid-template-columns: repeat(auto-fit, minmax(400px, 500px));
+      height: max-content;
+       padding-bottom: 260px;
     }
  
  }
  @media  screen and (max-width: 600px){
   
-  
+    .PROJECTS-CONTAINER{
+       margin-bottom: 50px;
+    }
    .projects h2{
       font-size: 28px;
       margin-top: 15px;

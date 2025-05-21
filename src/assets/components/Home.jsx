@@ -3,7 +3,7 @@ import './Home.css';
 import linkedin from '../images/linkedin.png';
 import github from '../images/github.png';
 import gmail from '../images/email.png';
-import mypicture from '../images/IMG_0029.jpg';
+import mypicture from '../images/ChatGPT Image May 21, 2025, 11_52_05 PM (1).jpg';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import { Link } from 'react-scroll';
 export const Home = () => {

@@ -94,10 +94,7 @@
       font-size: 20px;
       margin: 0;
     }
-    #check:checked ~ .nav-ul{
-      right: 0;
-      margin: 0;
-    }
+   
     
 }
 
